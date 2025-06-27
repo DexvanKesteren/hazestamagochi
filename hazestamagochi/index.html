@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamagotchi Hazes</title>
+  <link href="styles/style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="bars">
+    <div class="bar" data-type="bier">
+      <div class="bar-fill" id="bier-bar"></div>
+    </div>
+    <div class="bar" data-type="peuk">
+      <div class="bar-fill" id="peuk-bar"></div>
+    </div>
+    <div class="bar" data-type="mic">
+      <div class="bar-fill" id="mic-bar"></div>
+    </div>
+  </div>
+
+  <div class="tamagotchi">
+    <div class="speech-bubble" id="speech"></div>
+<!--de onderste afbeelding heb ik door ai laten genereren-->
+    <img id="character" src="img/defaulthazes.png" alt="Tamagotchi">
+  </div>
+
+<!-- de onderste 3 afbeeldingen heb ik door ai laten genereren -->
+  <div class="actions">
+    <img src="img/biertje.png" alt="Biertje" onclick="resetTimer('bier')">
+    <img src="img/peukie.png" alt="Peuk" onclick="resetTimer('peuk')">
+    <img src="img/microfoon.png" alt="Microfoon" onclick="resetTimer('mic')">
+  </div>
+</body>
+</html>
